@@ -2,8 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Container from './Container';
 
-import logo from '../public/logo.png';
-
 const Header = () => {
   return (
     <header className="absolute left-0 top-0 z-40 flex w-screen items-center justify-center overflow-hidden pt-10 md:pt-12 lg:pt-14">
@@ -15,7 +13,7 @@ const Header = () => {
             className="flex items-center justify-start"
           >
             <Image
-              src={logo}
+              src={require('/public/logo.png')}
               alt="logo"
               width={100}
               height={100}
