@@ -13,7 +13,7 @@ const Header = () => {
             className="flex items-center justify-start"
           >
             <Image
-              src={'/logo.png'}
+              src="/logo.png"
               alt="logo"
               width={100}
               height={100}
