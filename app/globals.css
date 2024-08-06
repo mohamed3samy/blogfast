@@ -2,32 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Mona Sans';
+  font-weight: 200 900;
+  font-display: block;
+  font-style: normal;
+  font-stretch: 75% 125%;
+  src: url('/fonts/Mona-Sans.var.woff2') format('woff2');
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  * {
+    @apply m-0 scroll-smooth p-0;
+  }
+
+  ::selection {
+    @apply bg-fancy-yellow text-neutral-900;
+  }
+
+  @media screen and (min-width: 1024px) {
+    ::-webkit-scrollbar {
+      @apply w-1.5;
+    }
+    ::-webkit-scrollbar-track {
+      @apply bg-neutral-900;
+    }
+    ::-webkit-scrollbar-thumb {
+      @apply rounded-full bg-neutral-400;
+    }
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .pluse-btn {
+    transition:
+      color 0.3s,
+      box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
