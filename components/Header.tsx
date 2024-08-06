@@ -13,7 +13,7 @@ const Header = () => {
             className="flex items-center justify-start"
           >
             <Image
-              src={require('/public/logo.png')}
+              src="/logo.svg"
               alt="logo"
               width={100}
               height={100}
