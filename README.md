@@ -1,6 +1,6 @@
 ## <a name="introduction">🤖 Introduction</a>
 
-BlogFast is a blog app built with a modern stack that includes Next.js 14+, TypeScript, Prisma, PostgreSQL Zod, Tailwind CSS, and Framer Motion.
+BlogFast is a blog app built with a modern stack that includes Next.js 14+, TypeScript, Prisma, PostgreSQL, Zod, Tailwind CSS, and Framer Motion.
 
 ## <a name="quick-start">⚡ Quick Start</a>
 
